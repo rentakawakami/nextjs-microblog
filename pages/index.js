@@ -13,8 +13,6 @@ const inter = Inter({ subsets: ['latin'] })
 //外部から一度だけデータを読み込む処理
 export async function getStaticProps() {
   const allPostsData = getPostData(); //id, title, date, thumbnail
-  
-
   return {
     props: {
       allPostsData,
